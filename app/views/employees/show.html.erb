@@ -1,0 +1,9 @@
+<h2><%= @employee.full_name %></h2>
+
+<h3>Alias: <%= @employee.alias %></h3>
+<h3>Title: <%= @employee.title %></h3>
+<h3>Office: <%= @employee.office %></h3>
+
+<% if @employee.dog %>
+  <h3>Dog: <%= link_to @employee.dog.name, @employee.dog %></h3>
+<% end %>
